@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 💗</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #f8e6e9;
+        font-family: 'Segoe UI', sans-serif;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 420px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .top-img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .photo-box {
+        margin-top: -20px;
+        background: #fff;
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px dashed #ff9bb3;
+    }
+
+    .photo {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .heart {
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+    .letter {
+        font-size: 40px;
+        margin-top: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .letter:hover {
+        transform: scale(1.2);
+    }
+
+    .message {
+        display: none;
+        margin-top: 15px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 15px;
+        color: #444;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- TOP SAME DESIGN IMAGE -->
+    <img src="top.png" class="top-img">
+
+    <!-- PHOTO FRAME -->
+    <div class="photo-box">
+        <img src="photo.jpg" class="photo">
+    </div>
+
+    <div class="heart">💗</div>
+
+    <!-- CLICKABLE LETTER -->
+    <div class="letter" onclick="showMessage()">💌</div>
+
+    <!-- MESSAGE -->
+    <div id="msg" class="message">
+        Happiest Birthday To The Most Precious Person In My Life💗 ....<br><br>
+        You are my everything and I'm so lucky to have you in my Life 🧿.....<br><br>
+        Thank you for being My Partner , My Best Friend ,<br>
+        My Safest Place and My Greatest Joy 🥂.....<br><br>
+        May this birthday be filled with all the happiness you bring into my world every day🎀.....<br><br>
+        You will always gonna be my kuchi puchi puuu🍑💨...<br><br>
+        I love youu Zee ❤️
+    </div>
+
+</div>
+
+<script>
+function showMessage() {
+    var x = document.getElementById("msg");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</body>
+  </html>
